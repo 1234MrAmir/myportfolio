@@ -838,7 +838,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  padding-bottom: 50px;
 }
 
 .contact .info {
@@ -1060,6 +1060,9 @@ section {
       height: 45vh;
     }
     #hero:before{height: 45vh;}
+    .portfolio #portfolio-flters{    overflow: scroll;
+      display: flex;}
+      .new-act-wrap{white-space: nowrap;}
   }
   
 
