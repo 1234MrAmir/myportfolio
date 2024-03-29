@@ -1,10 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -15,7 +8,7 @@ body {
 }
 
 a {
-  color: #149ddd;
+  color: black;
   text-decoration: none;
 }
 
@@ -313,7 +306,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #b586c842;
 }
 
 .section-title {
@@ -456,7 +449,7 @@ section {
 }
 
 .skills .progress-bar-wrap {
-  background: #dce8f8;
+  background: #c0c5cd;
   height: 10px;
 }
 
@@ -1062,6 +1055,13 @@ section {
   .breadcrumbs .d-flex {
     display: block !important;
   }
+  @media (max-width: 991px) {
+    #hero {
+      height: 45vh;
+    }
+    #hero:before{height: 45vh;}
+  }
+  
 
   .breadcrumbs ol {
     display: block;
@@ -1106,8 +1106,9 @@ section {
   }
 }
 .new-btn-hover{
-  padding: 13px 26px !important; background-color: #382A40 !important;border: 1px solid #382A40 !important;box-shadow: 2px 2px 12px -2px #808080a8;font-size: 18px;
+  padding: 13px 26px !important; background-color: #149ddd !important;border: 1px solid #149ddd !important;box-shadow: 2px 2px 12px -2px #808080a8;font-size: 18px;
 }
 .new-btn-hover:hover{
   color: #149ddd;
+  background-color: #4f415b !important;
 }
