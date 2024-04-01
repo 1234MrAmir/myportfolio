@@ -286,7 +286,7 @@ h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 36px;
   }
 
@@ -1081,7 +1081,12 @@ background-color: white !important;
   @media (max-width: 991px) {
     #hero {
       height: 45vh;
+      background-position: 73% 0px;
+      background-repeat: no-repeat;
     }
+    .new-btn-hover{padding: 10px 16px !important;}
+    #hero p{font-size: 20px;}
+
     #hero:before{height: 45vh;}
     .portfolio #portfolio-flters{    overflow: scroll;
       display: flex;}
@@ -1135,7 +1140,7 @@ background-color: white !important;
   }
 }
 .new-btn-hover{
-  padding: 13px 26px !important; background-color: #149ddd !important;border: 1px solid #149ddd !important;box-shadow: 2px 2px 12px -2px #808080a8;font-size: 18px;
+  padding: 13px 26px ; background-color: #149ddd !important;border: 1px solid #149ddd !important;box-shadow: 2px 2px 12px -2px #808080a8;font-size: 18px;
 }
 .new-btn-hover:hover{
   color: #149ddd;
