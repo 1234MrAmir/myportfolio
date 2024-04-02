@@ -1049,6 +1049,9 @@ background-color: white !important;
 .breadcrumbs {
   padding: 20px 0;
   background: #f9f9f9;
+  position: sticky;
+  top: 0px;
+  z-index: 99999;
 }
 
 .breadcrumbs h2 {
