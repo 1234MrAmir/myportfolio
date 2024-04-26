@@ -650,8 +650,8 @@ Academy
 
           </div>
 
-          <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form onsubmit="sendmail(); reset(); return false" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -668,16 +668,16 @@ Academy
               </div>
               <div class="form-group">
                 <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
+                <textarea class="form-control" name="message" rows="10" id="message" required></textarea>
               </div>
-              <div class="my-3">
+              <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+              </div> -->
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-          </div> -->
+          </div>
 
         </div>
 
@@ -782,6 +782,23 @@ Academy
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendmail(){
+      Email.send({
+    SecureToken : "cb1adc9e-2b64-4f47-a033-9a2b1b3aadb5",
+    To : 'charmingmunda1234@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "Contact from the Portfolio",
+    Body : "Name :"  + document.getElementById("name").value
+   + "<br> Email :" + document.getElementById("email").value
+   + "<br> Subject :" + document.getElementById("subject").value
+   + "<br> Message :" + document.getElementById("message").value
+}).then(
+  message => alert("Your details has been submitted successfully")
+);
+}
+  </script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

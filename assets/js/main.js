@@ -305,3 +305,8 @@ $(document).on("click", "#send-it", function() {
       .addClass("show")
       .removeClass("hide");
   });
+
+
+  // contact form js
+ 
+  
