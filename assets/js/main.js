@@ -307,6 +307,5 @@ $(document).on("click", "#send-it", function() {
   });
 
 
-  // contact form js
  
   

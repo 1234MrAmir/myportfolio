@@ -651,10 +651,6 @@ Academy
             <div class="col-lg-5">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112333.75882327136!2d79.4219398!3d28.3760788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a007334d02998d%3A0x5b9d44cf31ee87f!2sBareilly%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1711738267457!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-           
-
-         
-
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form onsubmit="sendmail(); reset(); return false" class="php-email-form">
               <div class="row">
@@ -683,12 +679,8 @@ Academy
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
           </div>
-
         </div>
-
-          
         </div>
-
         </div>
 
       </div>
@@ -762,7 +754,7 @@ Academy
     <span class="fab-dots fab-dots-3"></span>
   </label>
   <div class="fab-wheel">
-    <a  href="https://www.linkedin.com/in/mr-amir-9a5682250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " class="fab-action fab-action-1" target="_blank">
+    <a  href="https://www.linkedin.com/in/mr-amir-9a5682250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="fab-action fab-action-1" target="_blank">
       <i class="bx bxl-linkedin"></i>
     </a>
     <a href="https://www.instagram.com/mrcoder1234/?next=%2F&hl=en" target="_blank" class="fab-action fab-action-2">
@@ -800,16 +792,56 @@ Academy
     To : 'charmingmunda1234@gmail.com',
     From : document.getElementById("email").value,
     Subject : "Contact from the Portfolio",
-    Body : "Name :"  + document.getElementById("name").value
-   + "<br> Email :" + document.getElementById("email").value
-   + "<br> Subject :" + document.getElementById("subject").value
-   + "<br> Message :" + document.getElementById("message").value
+    Body : `<div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center bg-main-blue p-2"><img src="http://127.0.0.1:5501/assets/img/amir-profile.png" alt="" style="border-radius: 50%;width: 110px;"></div>
+      <table class="table table-striped table-responsive">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Details</th>           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Name</td>
+            <td>${document.getElementById("name").value}</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>${document.getElementById("email").value}</td>
+          </tr>
+          <tr>
+            <td>Subject</td>
+            <td>${document.getElementById("subject").value}</td>
+          </tr>
+          <tr>
+            <td>Message</td>
+            <td>${document.getElementById("message").value}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="d-flex justify-content-center text-light bg-blue p-2">
+        <div>
+        <p>Wesite: &nbsp;<a href="https://1234mramir.github.io/myportfolio/">www.amirportfolio.com</a></p>
+        <p>Email: &nbsp;<a href="mailto:mohdaamir2001pbt@gmail.com">mohdaamir2001pbt@gmail.com</a></p>
+        <p>Mobile-Number: &nbsp;<a href="tel:8218752418">8218752418</a></p>
+        <p>Address: &nbsp;<a href="tel:8218752418">Pilibhi, Bareilly (262001) India</a></p>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>`
+  //   Body : "Name :"  + document.getElementById("name").value
+  //  + "<br> Email :" + document.getElementById("email").value
+  //  + "<br> Subject :" + document.getElementById("subject").value
+  //  + "<br> Message :" + document.getElementById("message").value
 }).then(
   message => alert("Your details has been submitted successfully")
 );
 }
   </script>
-
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

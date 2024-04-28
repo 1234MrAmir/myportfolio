@@ -1714,3 +1714,6 @@ a.close-chat {
   margin-right: -8px;
   margin-bottom: -4px;
 }
+.bg-blue{background-color: #0c50a7;border-top: 5px solid black;}
+.bg-blue a{color: white;}
+.bg-main-blue{background-color: #0c50a7f2;}
